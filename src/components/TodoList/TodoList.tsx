@@ -1,9 +1,9 @@
-import React, { useContext, useEffect, useState } from "react";
+import React from "react";
 import "./TodoList.css";
 import TodoForm from "../TodoForm/TodoForm";
 import BasicSpinner from "../BasicSpinner/BasicSpinner";
 import TodoItem from "../TodoItem/TodoItem";
-import { useGlobalUser, UserContext } from "../../context/ToDoContext";
+import { useGlobalUser } from "../../context/ToDoContext";
 
 export interface Todo {
   id: string;

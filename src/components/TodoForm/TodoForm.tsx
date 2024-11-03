@@ -1,6 +1,6 @@
-import React, { useContext, useState } from "react";
+import React, {  useState } from "react";
 import "./TodoForm.css";
-import { useGlobalUser, UserContext } from"../../context/ToDoContext";
+import { useGlobalUser } from"../../context/ToDoContext";
 
 
 const TodoForm: React.FC = () => {

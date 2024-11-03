@@ -4,7 +4,7 @@ import {
     ReactNode,
     useContext,
   } from "react";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 
 const BASE_URL = `${import.meta.env.VITE_API_URL}/Todos`;
@@ -59,7 +59,7 @@ export interface Todo {
 
   const addTodo = async (title: string): Promise<void> => {
     try {
-      const response = await axios.post<Todo>(BASE_URL, {
+      await axios.post<Todo>(BASE_URL, {
         title,
         completed: false,
       });
