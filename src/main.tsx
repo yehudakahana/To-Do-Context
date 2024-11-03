@@ -1,7 +1,7 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
-import { UserProvider, useGlobalUser } from './context/ToDoContext'
+import { UserProvider } from './context/ToDoContext'
 
 createRoot(document.getElementById('root')!).render(
  <UserProvider>
