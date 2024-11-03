@@ -7,7 +7,7 @@ import {
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const BASE_URL = `${import.meta.env.VITE_API_URL}/Todos`;
+const BASE_URL = `${import.meta.env.VITE_API_URL}`;
 export interface Todo {
     id: string;
     title: string;
